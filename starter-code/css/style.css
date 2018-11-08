@@ -1,1 +1,51 @@
 /* TODO: Make it awesome */
+body {
+    width: 1200px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    outline: 1px solid red;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 100px;
+    width: 300px;
+    padding-top: 40px;
+}
+
+nav {
+    outline: 1px solid red;
+    margin-right: 50px;
+    float: right;
+}
+
+ol {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.deck {
+    width: 1000px;
+    height: 100%;
+    outline: 1px solid red;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    outline: 1px solid red;
+    text-align: center;
+}
+
+fieldset {
+    width: 1000px;
+    height: 1000px;
+    margin-bottom: 20px;
+}
