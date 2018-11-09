@@ -92,4 +92,9 @@ fieldset {
   width: 1000px;
   height: 300px;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+catalog {
+  text-align: center;
 }
