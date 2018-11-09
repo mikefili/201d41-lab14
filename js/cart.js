@@ -43,8 +43,8 @@ function showCart() {
     tbrEl.appendChild(deleteLink);
     var quanityEl = document.createElement('td');
     var productEl = document.createElement('td');
-    quanityEl.textContent = cart.items[count][1];
-    productEl.textContent = cart.items[count][0];
+    quanityEl.textContent = cart.items[count].quantity;
+    productEl.textContent = cart.items[count].product;
     tbrEl.appendChild(quanityEl);
     tbrEl.appendChild(productEl);
     tbodyEl.appendChild(tbrEl);
