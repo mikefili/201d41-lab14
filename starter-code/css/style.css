@@ -98,3 +98,8 @@ fieldset {
 catalog {
   text-align: center;
 }
+
+table {
+  width: 1000px;
+  padding: 5px;
+}

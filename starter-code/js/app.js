@@ -7,11 +7,13 @@ var Cart = function(items) {
 };
 
 Cart.prototype.addItem = function(product, quantity) {
-  Cart.push(new Product(product, quantity));
+  cart.items.push([product, quantity]);
 };
 
 Cart.prototype.saveToLocalStorage = function() {
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
+  var encoded = JSON.stringify(Cart);
+  localStorage.setItem('Cart', encoded);
 };
 
 Cart.prototype.removeItem = function(item) {
@@ -24,7 +26,7 @@ var CartItem = function(product, quantity) {
   this.quantity = quantity;
 };
 
-// Product contructor.
+// Product constructor.
 var Product = function(filePath, name) {
   this.filePath = filePath;
   this.name = name;
