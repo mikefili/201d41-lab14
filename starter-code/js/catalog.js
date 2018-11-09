@@ -30,7 +30,7 @@ function handleSubmit(event) {
   event.preventDefault();
 
   // Do all the things ...
-  addSelectedItemToCart();
+  addSelectedItemToCart(event);
   cart.saveToLocalStorage();
   updateCounter();
   updateCartPreview();
@@ -38,13 +38,13 @@ function handleSubmit(event) {
 }
 
 // TODO: Add the selected item and quantity to the cart
-function addSelectedItemToCart() {
+function addSelectedItemToCart(e) {
   // TODO: suss out the item picked from the select list
-  var selectedItem = event.target.items.value;
+  var selectedItem = e.target.items.value;
   // TODO: get the quantity
-  var selectedItemQuantity = event.target.quantity.value;
+  var selectedItemQuantity = e.target.quantity.value;
   // TODO: using those, add one item to the Cart
-  Cart.prototype.addItem(selectedItem, selectedItemQuantity);
+  cart.addItem(selectedItem, selectedItemQuantity);
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
